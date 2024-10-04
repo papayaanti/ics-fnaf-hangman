@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #e6d8ee;
+}
+
+/*game customization*/
+.screen {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  background-color: #fcf5ff;
+  border: 2px solid #a998b3;
+}
+
+img{
+  width: 60%;
+}
+
+#p3 {
+  font-size: 60px;
+}
+
+h1, p, button, #skinDesc{
+  font-family: Comic Sans Ms;
+}
+
+h1, p, #skinDesc{
+  color: #473b4e;
+}
+
+a{
+  color: #fcf5ff;
+  text-decoration: none;
+}
+
+button{
+  background-color: #473b4e;
+  color: #fcf5ff;
+  border: none;
+  padding: 20px;
+}
+
+button:hover{
+  background-color: #846e91;
+}

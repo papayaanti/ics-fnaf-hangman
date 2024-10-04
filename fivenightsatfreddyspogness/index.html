@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hangman</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <br>
+  <br>
+  <div id="customScreen" class="screen">
+    <h1>Welcome to Hangman!</h1>
+    <p>Click the buttons below to choose your character:</p>
+    <img id="skinPhoto"></img>
+    <div id="skinDesc"></div>
+    <br>
+    <button onclick="og()">Original</button>
+    <button onclick="freddy()">Freddy</button>
+    <button onclick="foxy()">Foxy</button>
+    <button onclick="chica()">Chica</button>
+    <br>
+    <br>
+    <button onclick="loadUp()">Start Game</button>
+  </div>
+  <br>
+  <br>
+  <div id="gameScreen" class="screen">
+    <h1>Hangman Yaaaaas</h1>
+    <p>Press the button below to guess a letter</p>
+    <p>Scroll down to see your progress</p>
+    <p>Press the hint button to get <b>ONLY</b> one hint</p>
+    <button onclick="guess()">Guess a letter</button>
+    <button onclick="restart()">Restart Game</button>
+    <br>
+    <br>
+    <button id = "hint" onclick="hint()">Give me a hint</button>
+    <div id="attemptBox"></div>
+    <p id="p1"> Letters picked: </p>
+    <p id="p2"> Incorrect letters: </p>
+    <p id="p4">Number of errors you can still make:</p>
+    <img id="hangman">
+    <p id="p3"></p>
+  </div>
+  <div id="failScreen" class="screen">
+    <h1>Yikes</h1>
+    <img src="otherphotos/crying.jpg">
+    <p>You are out of tries (you lost L)!</p>
+    <button onclick="restart()">Restart Game</button>
+  </div>
+  <div id="winScreen" class="screen">
+    <h1>Ok</h1>
+    <img src="otherphotos/heart.jpg">
+    <p>You guessed the word (you won)!</p>
+    <button onclick="restart()">Restart Game</button>
+  </div>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
